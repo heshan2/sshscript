@@ -21,7 +21,7 @@ echo ${update} Updating... Please wait...
 echo ${nc} Do not press anything...
 cd /data/data/com.termux/files/home/
 rm -rf torrentinator
-git clone https://github.com/Philiphackerzx/torrentinator.git --quiet
+git clone https://github.com/heshan2/sshscript.git --quiet
 cd torrentinator
 sh start
 else
