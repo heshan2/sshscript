@@ -1,0 +1,16 @@
+termux-setup-storage
+clear
+echo "Installing..."
+pkg install zip -y
+apt install aria2 -y
+pkg install unzip -y
+mkdir "/sdcard/download/woltrex"
+mkdir "/sdcard/download/woltrex/torrentinator"
+mkdir "/sdcard/download/woltrex/torrentinator/torrent-downloads"
+mkdir "/sdcard/download/woltrex/torrentinator/magnet-to-torrent"
+mkdir "/sdcard/download/woltrex/torrentinator/torrent-to-magnet"
+mkdir "/sdcard/download/woltrex/torrentinator/torrent-hashes"
+cp updater /sdcard/download/woltrex/torrentinator/
+cp unins /sdcard/download/woltrex/torrentinator/
+echo 1 > check.io
+sh start
