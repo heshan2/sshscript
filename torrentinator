@@ -26,7 +26,7 @@ printf "${red}          ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃�
 printf "${lime}                   𝕎𝕠𝕝𝕥𝕣𝕖𝕏'𝕤 𝕋𝕠𝕣𝕣𝕖𝕟𝕥 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕖𝕣    \n"
 printf "${red}          ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃\n"
 printf "${WHITE}                                     \n\n"
-printf "                      Downloader \n\n"
+printf "${WHITE}              Downloader \n\n"
 printf "${yellow}               1 - Torrent Downloader   \n"
 printf "${yellow}               2 - Magnet Downloader  \n\n"
 printf "${WHITE}              Convertor \n\n"
