@@ -20,15 +20,15 @@ clear
 echo ${update} Updating... Please wait...
 echo ${nc} Do not press anything...
 cd /data/data/com.termux/files/home/
-rm -rf torrentinator
+rm -rf sshscript
 git clone https://github.com/heshan2/sshscript.git --quiet
-cd torrentinator
+cd sshscript
 sh start
 else
 clear 
 echo ${no}No update available.. ${update}You are up-to-date ✓ ${nc}
 echo Press any key to continue..
 read pause
-cd /data/data/com.termux/files/home/torrentinator/
+cd /data/data/com.termux/files/home/sshscript/
 sh start
 fi
