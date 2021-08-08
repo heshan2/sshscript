@@ -23,7 +23,7 @@ clear
 echo ${lime}Starting Tool...
 clear
 printf "${red}          ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃\n"
-printf "${lime}                         𝕎𝕠𝕝𝕥𝕣𝕖𝕏'𝕤 𝕋𝕠𝕣𝕣𝕖𝕟𝕥 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕖𝕣    \n"
+printf "${lime}                      𝕎𝕠𝕝𝕥𝕣𝕖𝕏'𝕤 𝕋𝕠𝕣𝕣𝕖𝕟𝕥 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕖𝕣    \n"
 printf "${red}          ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃\n"
 printf "${WHITE}                                     \n\n"
 printf "                      Downloader \n\n"
@@ -42,7 +42,7 @@ printf "${yellow}               8 - Guide and Tutorial \n"
 printf "${yellow}               0 - Exit Torrentinator     \n"
 printf "${yellow}                         \n\n"
 printf "${red}          ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃\n"
-printf "${lime}                         𝕎𝕠𝕝𝕥𝕣𝕖𝕏'𝕤 𝕋𝕠𝕣𝕣𝕖𝕟𝕥 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕖𝕣        \n"
+printf "${lime}                      𝕎𝕠𝕝𝕥𝕣𝕖𝕏'𝕤 𝕋𝕠𝕣𝕣𝕖𝕟𝕥 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕖𝕣        \n"
 printf "${red}          ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃\n"
 printf "${NC}                                     \n"
 
