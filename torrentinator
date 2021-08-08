@@ -39,9 +39,9 @@ printf "${WHITE}         ┃ [☬] ꜱᴇᴛᴛɪɴɢꜱ                        
 printf "${yellow}         ┃       7 ━ ᴀʙᴏᴜᴛ ᴛʜɪꜱ ᴛᴏᴏʟ            \n"
 printf "${yellow}         ┃       8 ━ ᴇxɪᴛ         \n"
 printf "${yellow}         ┃                                        \n\n"
-printf "${red}          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━     \n"
-printf "${lime}         ┃  ☠ ᴡᴏʟᴛʀᴇx'ꜱ ᴛᴏʀʀᴇɴᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ☠                  \n"
-printf "${red}          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    \n"
+printf "${red}         ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n"
+printf "${lime}         ┃ ☠ ᴡᴏʟᴛʀᴇx'ꜱ ᴛᴏʀʀᴇɴᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ☠    \n"
+printf "${red}         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  \n"
 printf "${NC}                                     \n"
 
 printf "${lime}               Enter Your Choice : ${NC}"
