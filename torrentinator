@@ -23,7 +23,7 @@ clear
 echo ${lime}Starting Tool...
 clear
 printf "${red}====================================\n"
-printf "${lime}             Torrentinator    \n"
+printf "${lime}    WoltreX's Torrent Downloader    \n"
 printf "${red}====================================\n"
 printf "${WHITE}                                     \n\n"
 printf "     Downloader \n\n"
@@ -42,7 +42,7 @@ printf "        8 - Guide and Tutorial \n"
 printf "        0 - Exit Torrentinator     \n"
 printf "                         \n\n"
 printf "${red}====================================\n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${lime}   WoltreX's Torrent Downloader        \n"
 printf "${red}====================================\n"
 printf "${NC}                                     \n"
 
@@ -55,15 +55,15 @@ clear
 printf "${GREEN}====================================\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${WHITE}        TORRENT  DOWNLOADER          \n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${WHITE}             WoltreX's          \n"
+printf "${lime}          Torrent Downloader       \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${GREEN}====================================\n"
 printf "${NC}                                     \n"
 printf "${yellow}Enter Your Torrent File Path : ${NC}"
 read path
-cd /sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads/
+cd /sdcard/download/woltrex/torrentinator/torrent-downloads/
 aria2c "$path"
 
 
@@ -73,15 +73,15 @@ clear
 printf "${purple}====================================\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${WHITE}         MAGNET DOWNLOADER          \n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${WHITE}           WoltreX's          \n"
+printf "${lime}       Magnet Downloader        \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${purple}====================================\n"
 printf "${NC}                                     \n"
 printf "${yellow}Paste Your Magnet Link here : ${NC}"
 read link
-cd /sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads/
+cd /sdcard/download/woltrex/torrentinator/torrent-downloads/
 aria2c $link
 
 elif [ $choice -eq 3 ]
@@ -91,7 +91,7 @@ printf "${GREEN}====================================\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${WHITE}         TORRENT TO MAGNET          \n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${lime}               Woltrex        \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${GREEN}====================================\n"
@@ -100,7 +100,7 @@ printf "${yellow}Enter Your Torrent File Path : ${NC}"
 read path
 magnetlink=`aria2c -S "$path" | grep "Magnet URI" | cut -c13-`
 magnetname=`aria2c -S "$path" | grep "Name" | cut -c7-`
-cd /sdcard/download/www.philiphacker.in/torrentinator/torrent-to-magnet/
+cd /sdcard/download/woltrex/torrentinator/torrent-to-magnet/
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
@@ -123,10 +123,10 @@ echo -n "Do you want to download this torrent files (y/n)? "
 read answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-cd /sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads
+cd /sdcard/download/woltrex/torrentinator/torrent-downloads
     aria2c $magnetlink
 else
-cd /data/data/com.termux/files/home/torrentinator/
+cd /data/data/com.termux/files/home/sshscript/
     sh start
 fi
 
@@ -137,7 +137,7 @@ printf "${cyan}====================================\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${WHITE}        MAGNET TO TORRENT          \n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${lime}              Woltrex         \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${cyan}====================================\n"
@@ -161,7 +161,7 @@ torrentname=`aria2c -S hash.torrent | grep "Name" | cut -c7-`
 
 mv hash.torrent  "`aria2c -S hash.torrent | grep Name | cut -c7-`_(www.philiphacker.in).torrent"
 
-mv *.torrent "/sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent/"
+mv *.torrent "/sdcard/download/woltrex/torrentinator/magnet-to-torrent/"
 
 
 
@@ -174,7 +174,7 @@ echo ${lime} $torrentname
 echo ""
 echo ${WHITE}Your Torrent File Stored in Download folder at following loctaion,
 echo ""
-echo ${lime} /sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent/
+echo ${lime} /sdcard/download/woltrex/torrentinator/magnet-to-torrent/
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
@@ -182,10 +182,10 @@ echo -n "Do you want to download this torrent files (y/n)? "
 read answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-cd /sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads
+cd /sdcard/download/woltrex/torrentinator/torrent-downloads
     aria2c $magneturl
 else
-cd /data/data/com.termux/files/home/torrentinator/
+cd /data/data/com.termux/files/home/sshscript/
     sh start
 fi
 
@@ -200,7 +200,7 @@ printf "${GREEN}====================================\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${WHITE}        TORRENT HASH VIEWER          \n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${lime}               Woltrex        \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${GREEN}====================================\n"
@@ -233,7 +233,7 @@ printf "${purple}====================================\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${WHITE}        MAGNET  HASH VIEWER          \n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${lime}               Woltrex        \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${purple}====================================\n"
@@ -280,7 +280,7 @@ echo ""
 echo ""
 echo ""
 read pause
-cd /data/data/com.termux/files/home/torrentinator/
+cd /data/data/com.termux/files/home/sshscript/
     sh start
 
 
@@ -289,7 +289,7 @@ elif [ $choice -eq 7 ]
 then
 clear
 printf "${red}====================================\n"
-printf "${lime}             Torrentinator    \n"
+printf "${lime}        Torrent Downloader    \n"
 printf "${red}====================================\n"
 printf "${yellow}                                     \n\n"
 printf "     ABOUT, \n\n"
@@ -307,7 +307,7 @@ printf "    2 - Uninstall this tool \n"
 printf "    3 - Go back to main menu     \n"
 printf "                         \n\n"
 printf "${red}====================================\n"
-printf "${lime}        www.philiphacker.in        \n"
+printf "${lime}            WoltreX        \n"
 printf "${red}====================================\n"
 printf "${NC}                                     \n"
 
@@ -315,17 +315,17 @@ printf "${lime}Enter Your Choice : ${NC}"
 read cho
 if [ $cho -eq 1 ]
 then
- cd /sdcard/download/www.philiphacker.in/torrentinator/
+ cd /sdcard/download/woltrex/torrentinator/
  clear
 sh updater
 elif [ $cho -eq 2 ]
 then
- cd /sdcard/download/www.philiphacker.in/torrentinator/
+ cd /sdcard/download/woltrex/torrentinator/
  clear
 sh unins
 elif [ $cho -eq 3 ]
 then
-cd /data/data/com.termux/files/home/torrentinator/
+cd /data/data/com.termux/files/home/sshscript/
     sh start
 else
 clear
