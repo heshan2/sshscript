@@ -124,7 +124,7 @@ if [ "$answer" != "${answer#[Yy]}" ] ;then
 cd /sdcard/download/woltrex/torrent/torrent-downloads
     aria2c $magnetlink
 else
-cd /data/data/com.termux/files/home/sshscript/
+cd /data/data/com.termux/files/home/torrentdownloader/
     sh start
 fi
 
@@ -183,7 +183,7 @@ if [ "$answer" != "${answer#[Yy]}" ] ;then
 cd /sdcard/download/woltrex/torrent/torrent-downloads
     aria2c $magneturl
 else
-cd /data/data/com.termux/files/home/sshscript/
+cd /data/data/com.termux/files/home/torrentdownloader/
     sh start
 fi
 
@@ -278,7 +278,7 @@ echo ""
 echo ""
 echo ""
 read pause
-cd /data/data/com.termux/files/home/sshscript/
+cd /data/data/com.termux/files/home/torrentdownloader/
     sh start
 
 
@@ -323,7 +323,7 @@ then
 sh unins
 elif [ $cho -eq 3 ]
 then
-cd /data/data/com.termux/files/home/sshscript/
+cd /data/data/com.termux/files/home/torrentdownloader/
     sh start
 else
 clear
