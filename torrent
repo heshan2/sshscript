@@ -50,55 +50,55 @@ read choice
 if [ $choice -eq 1 ]
 then
 clear
-printf "${GREEN}              ====================================\n"
+printf "${GREEN}              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${WHITE}                          WoltreX's          \n"
-printf "${lime}                       Torrent Downloader       \n"
+printf "${WHITE}                           ☠ ᴡᴏʟᴛʀᴇx'ꜱ ☠          \n"
+printf "${lime}                        ☠ ᴛᴏʀʀᴇɴᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ☠       \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${GREEN}              ====================================\n"
+printf "${GREEN}              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${yellow}             Enter Your Torrent File Path : ${NC}"
 read path
-cd /sdcard/download/woltrex/torrentinator/torrent-downloads/
+cd /sdcard/download/woltrex/torrent/torrent-downloads/
 aria2c "$path"
 
 
 elif [ $choice -eq 2 ]
 then
 clear
-printf "${purple}             ====================================\n"
+printf "${purple}             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${WHITE}                           WoltreX's          \n"
-printf "${lime}                       Magnet Downloader        \n"
+printf "${WHITE}                            ☠ ᴡᴏʟᴛʀᴇx'ꜱ ☠          \n"
+printf "${lime}                         ☠ ᴛᴏʀʀᴇɴᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ☠        \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${purple}             ====================================\n"
+printf "${purple}             ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${yellow}             Paste Your Magnet Link here : ${NC}"
 read link
-cd /sdcard/download/woltrex/torrentinator/torrent-downloads/
+cd /sdcard/download/woltrex/torrent/torrent-downloads/
 aria2c $link
 
 elif [ $choice -eq 3 ]
 then
 clear
-printf "${GREEN}            ====================================\n"
+printf "${GREEN}            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${WHITE}                     TORRENT TO MAGNET          \n"
-printf "${lime}                          Woltrex        \n"
+printf "${WHITE}                           ☠ ᴡᴏʟᴛʀᴇx'ꜱ ☠          \n"
+printf "${lime}                        ☠ ᴛᴏʀʀᴇɴᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ☠        \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${GREEN}            ====================================\n"
+printf "${GREEN}            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${yellow}           Enter Your Torrent File Path : ${NC}"
 read path
 magnetlink=`aria2c -S "$path" | grep "Magnet URI" | cut -c13-`
 magnetname=`aria2c -S "$path" | grep "Name" | cut -c7-`
-cd /sdcard/download/woltrex/torrentinator/torrent-to-magnet/
+cd /sdcard/download/woltrex/torrent/torrent-to-magnet/
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
@@ -121,7 +121,7 @@ echo -n "Do you want to download this torrent files (y/n)? "
 read answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-cd /sdcard/download/woltrex/torrentinator/torrent-downloads
+cd /sdcard/download/woltrex/torrent/torrent-downloads
     aria2c $magnetlink
 else
 cd /data/data/com.termux/files/home/sshscript/
@@ -131,14 +131,14 @@ fi
 elif [ $choice -eq 4 ]
 then
 clear
-printf "${cyan}====================================\n"
+printf "${cyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${WHITE}        MAGNET TO TORRENT          \n"
-printf "${lime}              Woltrex         \n"
+printf "${WHITE}            ☠ ᴡᴏʟᴛʀᴇx'ꜱ ☠          \n"
+printf "${lime}         ☠ ᴛᴏʀʀᴇɴᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ☠         \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
-printf "${cyan}====================================\n"
+printf "${cyan}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
 printf "${NC}                                     \n"
 printf "${yellow}Paste Your Magnet Link here : ${NC}"
 read magneturl
@@ -159,7 +159,7 @@ torrentname=`aria2c -S hash.torrent | grep "Name" | cut -c7-`
 
 mv hash.torrent  "`aria2c -S hash.torrent | grep Name | cut -c7-`_(www.philiphacker.in).torrent"
 
-mv *.torrent "/sdcard/download/woltrex/torrentinator/magnet-to-torrent/"
+mv *.torrent "/sdcard/download/woltrex/torrent/magnet-to-torrent/"
 
 
 
@@ -172,7 +172,7 @@ echo ${lime} $torrentname
 echo ""
 echo ${WHITE}Your Torrent File Stored in Download folder at following loctaion,
 echo ""
-echo ${lime} /sdcard/download/woltrex/torrentinator/magnet-to-torrent/
+echo ${lime} /sdcard/download/woltrex/torrent/magnet-to-torrent/
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
@@ -180,7 +180,7 @@ echo -n "Do you want to download this torrent files (y/n)? "
 read answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-cd /sdcard/download/woltrex/torrentinator/torrent-downloads
+cd /sdcard/download/woltrex/torrent/torrent-downloads
     aria2c $magneturl
 else
 cd /data/data/com.termux/files/home/sshscript/
@@ -313,12 +313,12 @@ printf "${lime}Enter Your Choice : ${NC}"
 read cho
 if [ $cho -eq 1 ]
 then
- cd /sdcard/download/woltrex/torrentinator/
+ cd /sdcard/download/woltrex/torrent/
  clear
 sh updater
 elif [ $cho -eq 2 ]
 then
- cd /sdcard/download/woltrex/torrentinator/
+ cd /sdcard/download/woltrex/torrent/
  clear
 sh unins
 elif [ $cho -eq 3 ]
