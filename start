@@ -5,5 +5,5 @@ then
 echo 1 > check.io
 sh install
 else
-sh torrentinator
+sh torrent
 fi
