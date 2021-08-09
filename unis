@@ -1,8 +1,8 @@
 unins='\033[1;32m'
-rm -rf /data/data/com.termux/files/home/sshscript
+rm -rf /data/data/com.termux/files/home/torrentdownloader
 cd /sdcard/download/woltrex/
-rm -rf sshscript
-mkdir sshscript
+rm -rf torrentdownloader
+mkdir torrentdownloader
 NC='\033[0m'
 clear
-echo ${unins} Torrentinator - Uninstalled ✓ ${NC}
+echo ${unins} Torrent Downloader - Uninstalled ✓ ${NC}
