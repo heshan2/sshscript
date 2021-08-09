@@ -5,12 +5,12 @@ pkg install zip -y
 apt install aria2 -y
 pkg install unzip -y
 mkdir "/sdcard/download/woltrex"
-mkdir "/sdcard/download/woltrex/torrentinator"
-mkdir "/sdcard/download/woltrex/torrentinator/torrent-downloads"
-mkdir "/sdcard/download/woltrex/torrentinator/magnet-to-torrent"
-mkdir "/sdcard/download/woltrex/torrentinator/torrent-to-magnet"
-mkdir "/sdcard/download/woltrex/torrentinator/torrent-hashes"
-cp updater /sdcard/download/woltrex/torrentinator/
-cp unins /sdcard/download/woltrex/torrentinator/
+mkdir "/sdcard/download/woltrex/torrent"
+mkdir "/sdcard/download/woltrex/torrent/torrent-downloads"
+mkdir "/sdcard/download/woltrex/torrent/magnet-to-torrent"
+mkdir "/sdcard/download/woltrex/torrent/torrent-to-magnet"
+mkdir "/sdcard/download/woltrex/torrent/torrent-hashes"
+cp updater /sdcard/download/woltrex/torrent/
+cp unins /sdcard/download/woltrex/torrent/
 echo 1 > check.io
 sh start
